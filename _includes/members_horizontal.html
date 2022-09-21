@@ -1,0 +1,34 @@
+<div class="card-item col">
+  {%- if member.redirect -%}
+  <a href="{{ member.redirect }}">
+  {%- endif -%}
+    <div class="card hoverable">
+      <div class="row g-0">
+        {%- if member.img -%}
+        <div class="col-md-12">
+          <div class="card-img float-left col-md-6">
+              <img src="{{ member.img | relative_url }}" alt="member thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ member.title }}</h3>
+            {%- if member.email -%}
+            <a href="mailto:{{ member.email }}">Email: {{ member.email }}</a>
+            {%- endif -%}
+            <p class="card-text">{{ member.description }}</p>
+          </div>
+        </div>
+        {%- else -%}
+        <div class="col-md-12">
+          <div class="card-body">
+            <h3 class="card-title">{{ member.title }}</h3>
+            <p class="card-text">{{ member.description }}</p>
+          </div>
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- if member.redirect -%}
+  </a>
+  {%- endif -%}
+  
+</div>

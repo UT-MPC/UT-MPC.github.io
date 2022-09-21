@@ -1,0 +1,37 @@
+<div class="card-item col">
+  {%- if research.redirect -%}
+  <a href="{{ research.redirect }}">
+  {%- endif -%}
+    <div class="card hoverable">
+      <div class="row g-0">
+        {%- if research.img -%}
+        <div class="col-md-12">
+          <div class="card-img float-right col-md-6">
+              <img src="{{ research.img | relative_url }}" alt="research thumbnail">
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">{{ research.title }}</h3>
+            <p class="card-text">{{ research.description }}</p>
+            {%- if research.participants -%}
+              <p class="card-text"><b>Participants: </b>{{ research.participants }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- else -%}
+        <div class="col-md-12">
+          <div class="card-body">
+            <h3 class="card-title">{{ research.title }}</h3>
+            <p class="card-text">{{ research.description }}</p>
+            {%- if research.participants -%}
+              <p class="card-text"><b>Participants: </b>{{ research.participants }}</p>
+            {%- endif -%}
+          </div>
+        </div>
+        {%- endif -%}
+      </div>
+    </div>
+  {%- if research.redirect -%}
+  </a>
+  {%- endif -%}
+  
+</div>
