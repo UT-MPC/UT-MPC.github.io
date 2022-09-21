@@ -20,3 +20,4 @@ jobs:
         with:                                # Some relative inputs of your action
           token: ${{ secrets.TOKEN_PUSH }}
           pre_build_commands: apk --update add imagemagick
+          target_branch: 'gh-pages'
