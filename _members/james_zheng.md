@@ -14,6 +14,6 @@ description: |
     James' dissertation focused on the design and implementation of middlewares for cyber physical systems (CPS). His research provided formal and practical support to aid verification and validation of mission-critical CPS.
 img: assets/img/members/JZ.jpeg
 importance: 16
-redirect: http://web.science.mq.edu.au/~jxzheng/
+redirect: https://itseg.org/group.php
 category: Alumni
 ---
