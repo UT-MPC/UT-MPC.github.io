@@ -9,9 +9,6 @@ importance: 0
 category: Current Projects
 no_header: true
 ---
-<meta property="og:image" content="assets/img/projects/sasha_icon.png"/>
-<meta property="og:title" content="Sasha"/>
-<meta property="og:description" content="Creative Goal-Oriented Reasoning in Smart Homes With Large Language Models"/>
 
 <style>
     hr {
